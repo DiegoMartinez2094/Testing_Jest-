@@ -1,4 +1,8 @@
 function fizzbuzz(num) {
+  if (num == 0) {
+    return num;
+  }
+
   if (num % 3 == 0 && num % 5 == 0) {
     return "fizzbuzz";
   }
@@ -12,7 +16,7 @@ function fizzbuzz(num) {
 }
 
 function print(num) {
-  for (let i=0; i<=num; i++) {
+  for (let i = 0; i <= num; i++) {
     console.log(`${i}: ${fizzbuzz(i)}`);
   }
 }
