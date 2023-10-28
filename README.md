@@ -1,12 +1,12 @@
 # Prueba de Testing con la libreria de Js JEST
 
-1-Creamos un proyecto con 
+1-Creamos un proyecto con
 
 ```
 npm init -y 
 ```
 
-se crea el package.json 
+se crea el package.json
 
 2-instalamos la libreria de jest
 
@@ -21,7 +21,7 @@ npm i -D jest
 npx jest --init
 ```
 
-nos saldrán avisos: 
+nos saldrán avisos:
 
 Would you like to use Jest when running "test" script in "package.json"?
 
@@ -29,7 +29,7 @@ Would you like to use Jest when running "test" script in "package.json"?
 y
 ```
 
-Would you like to use Typescript for the configuration file? 
+Would you like to use Typescript for the configuration file?
 
 ```
 n
@@ -95,8 +95,6 @@ describe("fizzbuzz", () => {
 });
 ```
 
-
-
 corremos el comando
 
 ```
@@ -110,12 +108,12 @@ Nos saldrá la siguiente información:
 > testing_jest-@1.0.0 test
 > jest
 
- PASS  ./fizzbuzz.test.js                                                                                                                 
+ PASS  ./fizzbuzz.test.js                                                                                                               
   fizzbuzz
-    √ test (3 ms)                                                                                                                         
-                                                                                                                                          
-----------|---------|----------|---------|---------|-------------------                                                                   
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                    
+    √ test (3 ms)                                                                                                                       
+                                                                                                                                        
+----------|---------|----------|---------|---------|-------------------                                                                 
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                  
 ----------|---------|----------|---------|---------|-------------------
 All files |       0 |        0 |       0 |       0 | 
 ----------|---------|----------|---------|---------|-------------------
@@ -131,4 +129,10 @@ y se crea una carpeta llamada "coverage".
 
 ---
 
-ahora modificamos el fizzbuzz.test.js
+ahora modificamos el package.json:
+
+creamos un nuevo script:
+"test:watch": "test --watchAll"
+esto para que corra los test automaticamente y no sea necesario poner en todo momento "npm test"
+
+---

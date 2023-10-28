@@ -4,7 +4,8 @@
   "description": "1-Creamos un proyecto con",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "test --watchAll" 
   },
   "keywords": [],
   "author": "",
