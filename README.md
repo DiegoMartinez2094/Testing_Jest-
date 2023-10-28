@@ -135,4 +135,12 @@ creamos un nuevo script:
 "test:watch": "test --watchAll"
 esto para que corra los test automaticamente y no sea necesario poner en todo momento "npm test"
 
----
+# Cómo funciona el programa ?
+
+1-clonar el repositorio 
+
+2- npm instal 
+
+3-npm test (corre el test)
+
+4- node fizzbuzz (corre el programa)
